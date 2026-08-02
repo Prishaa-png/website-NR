@@ -5,6 +5,9 @@
 .about-area{
     display: flex;
     align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
     @media #{$md}{
       display: block;
     }
@@ -17,12 +20,11 @@
     // left img
 	.about-img{
 		background-image: url(../img/gallery/about-img1.png);
-		background-size: 100%;
-		background-size: cover;
+		background-size: contain;
 		background-repeat: no-repeat;
-		// background-position: center center;
-		height: 700px;
-		width: 50%;
+		background-position: center center;
+		height: 620px;
+		width: 42%;
 
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -56,8 +58,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        height: 700px;
-        width: 50%;
+        height: 620px;
+        width: 58%;
 		padding: 120px 75px;
 		display: flex;
 		align-items: center;
@@ -151,9 +153,12 @@
 
 
 // ! About Bottom  section 02
-.about-area2{
+.about-area3{
 	@include flexbox();
     @include align-items(center);
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
     @media #{$md}{
       display: block;
     }
@@ -164,14 +169,13 @@
       display: block;
     }
     // left img
-	.about-img2{
-		background-image: url(../img/gallery/about-img2.png);
-		background-size: 100%;
-		background-size: cover;
+	.about-img3{
+		background-image: url(../img/gallery/about-img3.png);
+		background-size: contain;
 		background-repeat: no-repeat;
-		// background-position: center center;
-		height: 700px;
-		width: 50%;
+		background-position: center center;
+		height: 620px;
+		width: 42%;
 		justify-content: center;
 		align-items: end;
 
@@ -249,9 +253,9 @@
     }
     
     // 	Right  Contents
-    .about-details2{
-		height: 700px;
-		width: 50%;
+    .about-details3{
+		height: 620px;
+		width: 58%;
 		padding: 85px 29px;
 		display: flex;
 		align-items: center;
@@ -309,7 +313,7 @@
 }
 
 //About Details page
-.about-details2{
+.about-details3{
 	.about-details-cap2{
 		h4{
 			font-size: 30px;

@@ -27,16 +27,16 @@
 
 .slider-area{
     margin-top: -1px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     @media #{$md}{
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     }
     @media #{$sm}{
-        padding-bottom: 50px;
+        padding-bottom: 20px;
         padding-top: 50px;
     }
     @media #{$xs}{
-        padding-bottom: 50px;
+        padding-bottom: 20px;
         padding-top: 50px;
     }
     &.slider-area2{
@@ -54,16 +54,16 @@
             @include align-items(center);
             @include flex-wrap(wrap);
             .hero-img{
-                width: 59%;
+                width: 50%;
                 overflow: hidden;
                 @media #{$laptop}{
-                    width: 51%;
+                    width: 45%;
                 }
                 @media #{$lg}{
-                    width: 51%;
+                    width: 45%;
                 }
                 @media #{$md}{
-                    width: 49%;
+                    width: 43%;
                 }
                 @media #{$sm}{
                     display: none;
