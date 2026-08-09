@@ -1,0 +1,179 @@
+/* ============================================================
+   MOBILE REFINEMENTS
+   Additive, mobile-only polish. Every rule below is scoped inside
+   a max-width media query, so nothing here touches the desktop
+   (≥992px) layout, which stays exactly as finalized.
+   Load this file AFTER assets/css/style.css.
+   ============================================================ */
+
+/* ---------- Safety net (all breakpoints below desktop) ---------- */
+@media only screen and (max-width: 991px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    a, button, .btn, .btn2 {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+/* ---------- Header / logo ---------- */
+@media only screen and (max-width: 991px) {
+    .header-area .logo img {
+        max-height: 40px;
+        width: auto;
+    }
+    .header-area .header-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/* Mobile-only "Make an Appointment" item injected into the nav list.
+   Hidden on desktop (≥992px) via the existing Bootstrap d-lg-none
+   utility already applied to it in the markup, so this only styles
+   the mobile slide-out menu. */
+@media only screen and (max-width: 991px) {
+    .mobile_menu .slicknav_nav .mobile-nav-cta {
+        margin-top: 6px;
+        padding: 4px 10px 8px;
+    }
+    .mobile_menu .slicknav_nav .mobile-nav-cta a {
+        background: #967855 !important;
+        color: #fff !important;
+        border-radius: 30px;
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+/* ---------- Hero ---------- */
+@media only screen and (max-width: 767px) {
+    .slider-area .single-slider .slider-cap-wrapper .hero-caption p {
+        padding-right: 0;
+    }
+    .slider-area .single-slider .slider-cap-wrapper .hero-caption .btn {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+/* ---------- Section rhythm: tighten stacked spacing so headings
+   don't leave a large dead gap before the next block on small
+   screens (heading bottom-margin + section padding were doubling up) ---------- */
+@media only screen and (max-width: 767px) {
+    .section-tittle.mb-70 {
+        margin-bottom: 36px;
+    }
+    .services-section.section-padding30 {
+        padding-bottom: 40px;
+    }
+    .home-blog .section-tittle.mb-70 {
+        margin-bottom: 30px;
+    }
+}
+
+/* ---------- About sections: small visual polish on the image blocks ---------- */
+@media only screen and (max-width: 767px) {
+    .about-area .about-img,
+    .about-area2 .about-img2,
+    .about-area3 .about-img3 {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .footer-tittles {
+        padding-top: 10px;
+    }
+}
+
+/* ---------- Accordion ("What We Offer") ---------- */
+@media only screen and (max-width: 767px) {
+    .collapse-wrapper .card-header a {
+        padding: 18px 15px 18px 38px;
+        line-height: 1.4;
+    }
+    .collapse-wrapper .card-body {
+        padding: 16px 20px 22px;
+        line-height: 1.6;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .collapse-wrapper .card-body {
+        padding: 14px 16px 20px;
+    }
+}
+
+/* ---------- Testimonials: give each quote a defined card so it
+   reads as a distinct, finished block rather than bare text ---------- */
+@media only screen and (max-width: 767px) {
+    .testimonial-area .single-testimonial {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 24px 20px !important;
+        margin-bottom: 20px;
+        box-shadow: 0 10px 25px rgba(1, 10, 68, 0.06);
+    }
+    .h1-testimonial-active .single-testimonial:last-child {
+        margin-bottom: 0;
+    }
+    .testimonial-area .testimonial-caption p {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    .testimonial-area .founder-img {
+        margin-left: 0;
+    }
+    .testimonial-area .founder-text {
+        margin-left: 16px;
+    }
+    .testimonial-area .founder-text span {
+        font-size: 17px;
+    }
+}
+
+/* ---------- FAQ cards ---------- */
+@media only screen and (max-width: 767px) {
+    .home-blog .single-blogs {
+        margin: 0 15px 8px;
+    }
+    .home-blog .single-blogs .blogs-cap h5 a {
+        font-size: 18px;
+        line-height: 1.35;
+    }
+    .home-blog .single-blogs .blogs-cap p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+/* ---------- Contact / "Want to chat" section ---------- */
+@media only screen and (max-width: 767px) {
+    .wantToWork-area {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .wantToWork-area .wantToWork-btn,
+    .wantToWork-area .linkedin-link {
+        min-height: 46px;
+    }
+}
+
+/* ---------- Very small phones ---------- */
+@media only screen and (max-width: 360px) {
+    .slider-area .single-slider .slider-cap-wrapper .hero-caption {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about-area .about-details,
+    .about-area2 .about-details2,
+    .about-area3 .about-details3 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}

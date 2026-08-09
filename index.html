@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile-refinements.css">
 <body>
     <!-- ? Preloader Start -->
     <div id="preloader-active">
@@ -47,7 +48,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
-                              <a href="index.html"><img src="assets/img/logo/header.png" alt=""></a>
+                              <img src="assets/img/logo/header.png" alt="">
                           </div>
                       </div>
                       <div class="col-xl-10 col-lg-10 col-md-8">
@@ -56,15 +57,15 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav> 
                                     <ul id="navigation">                                                                                                                                     
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="#services">Services</a></li>
-                                        <li><a href="#contact">Contact</a></li>
+                                        <li><a href="#services" onclick="scrollToMiddle(event, 'services')">Services</a></li>
+                                        <li><a href="#contact" onclick="scrollToMiddle(event, 'contact')">Contact</a></li>
+                                        <li class="mobile-nav-cta d-lg-none"><a href="https://www.cal.eu/prishaa/15min" target="_blank" rel="noopener noreferrer">Make an Appointment</a></li>
                                     </ul>
                                 </nav>
                             </div>
                             <!-- left Btn -->
                             <div class="header-right-btn f-right d-none d-lg-block  ml-30">
-                                <a href="https://www.cal.eu/prishaa/15min" class="header-btn">Make an Appointment</a>
+                                <a href="https://www.cal.eu/prishaa/15min" target="_blank" rel="noopener noreferrer" class="header-btn">Make an Appointment</a>
                             </div>
                         </div>
                     </div>             
@@ -81,8 +82,9 @@
 </header>
 <main>
     <!--? slider Area Start-->
-    <div style="background-color: white; height: 100px;"></div>
+        <div class="header-spacer"></div>
     <div class="slider-area slider-height position-relative" style="background-color: #f5e8d8;">
+
         <div class="slider-active">
             <!-- Single Slider -->
             <div class="single-slider">
@@ -91,7 +93,7 @@
                         <h1 data-animation="fadeInLeft" data-delay=".4s">V-CFO and business consulting</h1>
                         <p data-animation="fadeInLeft" data-delay=".6s">Helping founders build financial systems, stay compliant, and make decisions.</p>
                         <!-- Hero Btn -->
-                        <a href="#services" class="btn"  data-animation="fadeInLeft" data-delay=".9s" >Explore Services</a>
+                        <a href="#services" onclick="scrollToMiddle(event, 'services')" class="btn"  data-animation="fadeInLeft" data-delay=".9s" >Explore Services</a>
                     </div>
                     <div class="hero-img">
                         <img src="assets/img/hero/h1_hero1.png" alt=""  data-animation="fadeInRight" data-transition-duration="5s">
@@ -102,7 +104,7 @@
     </div>
     <!-- slider Area End-->
     <!--? Services Area Start -->
-    <section class="services-section section-padding30 fix" style="padding-top: 150px; padding-bottom: 0px;" id="services">
+        <section class="services-section section-padding30 fix services-desktop-padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-10 col-lg-10 col-md-12">
@@ -121,7 +123,7 @@
         <div class="about-img">
         </div>
         <!-- right Contents -->
-        <div class="about-details" style="padding-left: 100px;">
+        <div class="about-details">
             <div class="right-caption">
                 <!-- Section Tittle -->
                 <div class="section-tittle mb-30">
@@ -139,7 +141,7 @@
     </section>
     <section class="about-area2 fix" style="background-color: #f5e8d8;">
         <!-- left Contents -->
-        <div class="about-details2" style="padding-left: 100px;">
+        <div class="about-details2">
             <div class="right-caption">
                 <!-- Section Tittle -->
                 <div class="section-tittle mb-30">
@@ -161,11 +163,11 @@
     </section>
     <!-- About Area End-->
     <!--! About Area Start 02-->
-    <div class="about-area3">
+    <div class="about-area3" id="services">
         <!-- left Contents -->
         <div class="about-img3"></div>
         <!--Right Contents  -->
-        <div class="about-details3" style="padding-left: 100px;">
+        <div class="about-details3">
             <div class="right-caption2">
                 <!-- Section Tittle -->
                 <div class="section-tittle mb-30">
@@ -392,7 +394,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="row align-items-center justify-content-end">
                             <div class="col-auto">
-                                <a href="https://www.cal.eu/prishaa/15min" class="btn w-btn wantToWork-btn">Make an Appointment</a>
+                                <a href="https://www.cal.eu/prishaa/15min"  target="_blank" rel="noopener noreferrer" class="btn w-btn wantToWork-btn">Make an Appointment</a>
                             </div>
                             <div class="col-auto">
                                 <div class="cta-or-text">or contact us on LinkedIn:</div>
@@ -458,6 +460,7 @@
 <!-- Jquery Plugins, main Jquery -->	
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
+<script src="./assets/js/scroll.js"></script>
 
 </body>
 </html>

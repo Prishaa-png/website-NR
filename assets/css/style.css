@@ -719,9 +719,25 @@ hr {
     background: #fff
 }
 
-.mt-5 {
-    margin-top: 5px
+@media only screen and (min-width: 768px) {
+    .services-desktop-padding {
+        padding-top: 150px !important;
+        padding-bottom: 0px !important;
+    }
 }
+
+
+.header-spacer {
+    height: 100px;
+}
+
+
+@media (max-width: 991px) {
+    .header-spacer {
+        height: 70px;
+    }
+}
+
 
 .mt-10 {
     margin-top: 10px
@@ -2293,12 +2309,12 @@ hr {
 }
 
 .w-padding2 {
-    padding: 73px 0px
+    padding: 50px 0px
 }
 
 @media (max-width: 575px) {
     .w-padding2 {
-        padding: 70px 0px
+        padding: 40px 0px
     }
 }
 
@@ -2307,8 +2323,8 @@ hr {
 }
 
 .testimonial-padding {
-    padding-top: 70px;
-    padding-bottom: 100px
+    padding-top: 40px;
+    padding-bottom: 70px
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2351,10 +2367,40 @@ hr {
     }
 }
 
-.section-padding30 {
-    padding-top: 195px;
-    padding-bottom: 180px
+@media only screen and (min-width: 992px) {
+    .about-area .about-img, .about-area .about-details,
+    .about-area2 .about-img2, .about-area2 .about-details2,
+    .about-area3 .about-img3, .about-area3 .about-details3 {
+        height: 380px;
+    }
+    .about-area .about-details, .about-area2 .about-details2 {
+        padding: 40px 55px;
+    }
+    .about-area3 .about-details3 {
+        padding: 20px 29px;
+    }
 }
+
+
+
+@media only screen and (max-width: 767px) {
+
+    .section-padding30 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .section-padding40 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .about-area .about-details,
+    .about-area2 .about-details2,
+    .about-area3 .about-details3 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .section-padding30 {
@@ -2385,8 +2431,8 @@ hr {
 }
 
 .section-padding40 {
-    padding-top: 110px;
-    padding-bottom: 110px
+    padding-top: 70px;
+    padding-bottom: 80px
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3020,15 +3066,20 @@ hr {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .slider-area .single-slider .slider-cap-wrapper .hero-img {
-        display: none
+        width: 100%;
+        text-align: center;
+        padding: 0 37px 50px 37px;
     }
 }
 
 @media (max-width: 575px) {
     .slider-area .single-slider .slider-cap-wrapper .hero-img {
-        display: none
+        width: 100%;
+        text-align: center;
+        padding: 0 37px 50px 37px;
     }
 }
+
 
 .slider-area .single-slider .slider-cap-wrapper .hero-img img {
     width: 100%
@@ -3071,9 +3122,10 @@ hr {
     .slider-area .single-slider .slider-cap-wrapper .hero-caption {
         width: 100%;
         padding-left: 37px;
-        padding-bottom: 90px
+        padding-bottom: 30px
     }
 }
+
 
 .slider-area .single-slider .slider-cap-wrapper .hero-caption span {
     color: #010A44;
@@ -3394,8 +3446,8 @@ hr {
 .about-area {
     display: flex;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
     box-sizing: border-box
 }
 
@@ -3419,17 +3471,17 @@ hr {
 
 .about-area .about-img {
     background-image: url(../img/gallery/about-img1.png);
-    background-size: contain;
+    background-size: auto 84%;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 620px;
-    width: 42%;
+    height: 540px;
+    width: calc(50% - 15px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: end
@@ -3438,21 +3490,22 @@ hr {
 @media (max-width: 575px) {
     .about-area .about-img {
         width: 100%;
-        height: 500px
+        height: 340px
     }
 }
+
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .about-area .about-img {
         width: 100%;
-        height: 550px
+        height: 610px
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .about-area .about-img {
         width: 100%;
-        height: 600px
+        height: 665px
     }
 }
 
@@ -3461,11 +3514,12 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 620px;
-    width: 58%;
+    height: 540px;
+    width: calc(50% - 15px);
     padding: 120px 75px;
     display: flex;
-    align-items: center
+    align-items: center;
+    justify-content: center
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3475,11 +3529,12 @@ hr {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .about-area .about-details {
-        width: 100%;
-        padding: 50px 30px;
-        padding-bottom: 0;
-        height: 615px
+    .about-area .about-img, .about-area2 .about-img2, .about-area3 .about-img3 {
+        height: 400px;
+    }
+    .about-area .about-details, .about-area2 .about-details2, .about-area3 .about-details3 {
+        height: auto;
+        padding: 40px 30px;
     }
 }
 
@@ -3487,7 +3542,7 @@ hr {
     .about-area .about-details {
         width: 100%;
         padding: 50px 30px;
-        height: 615px;
+        height: auto;
         padding-bottom: 0
     }
 }
@@ -3496,9 +3551,10 @@ hr {
     .about-area .about-details {
         width: 100%;
         padding: 50px 15px;
-        height: 755px
+        height: auto
     }
 }
+
 
 .about-area .about-details .right-caption {
     width: 69%
@@ -3549,8 +3605,8 @@ hr {
 .about-area2 {
     display: flex;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
     box-sizing: border-box
 }
 
@@ -3574,17 +3630,18 @@ hr {
 
 .about-area2 .about-img2 {
     background-image: url(../img/gallery/about-img2.png);
-    background-size: contain;
+    background-size: auto 84%;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 620px;
-    width: 42%;
+        height: 540px;
+
+    width: calc(50% - 15px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: end
@@ -3593,21 +3650,22 @@ hr {
 @media (max-width: 575px) {
     .about-area2 .about-img2 {
         width: 100%;
-        height: 500px
+        height: 340px
     }
 }
+
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .about-area2 .about-img2 {
         width: 100%;
-        height: 550px
+        height: 610px
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .about-area2 .about-img2 {
         width: 100%;
-        height: 600px
+        height: 665px
     }
 }
 
@@ -3616,11 +3674,14 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 620px;
-    width: 58%;
-    padding: 120px 75px;
+        height: 540px;
+
+    width: calc(50% - 15px);
+        padding: 60px 55px;
+
     display: flex;
-    align-items: center
+    align-items: center;
+    justify-content: center
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3629,20 +3690,15 @@ hr {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .about-area2 .about-details2 {
-        width: 100%;
-        padding: 50px 30px;
-        padding-bottom: 0;
-        height: 615px
-    }
-}
+/* Replaced about-area2 tablet styles */
+
+
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .about-area2 .about-details2 {
         width: 100%;
         padding: 50px 30px;
-        height: 615px;
+        height: auto;
         padding-bottom: 0
     }
 }
@@ -3651,9 +3707,10 @@ hr {
     .about-area2 .about-details2 {
         width: 100%;
         padding: 50px 15px;
-        height: 755px
+        height: auto
     }
 }
+
 
 .about-area2 .about-details2 .right-caption {
     width: 69%
@@ -3746,8 +3803,8 @@ hr {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
     box-sizing: border-box
 }
 
@@ -3771,11 +3828,12 @@ hr {
 
 .about-area3 .about-img3 {
     background-image: url(../img/gallery/about-img3.png);
-    background-size: contain;
+    background-size: auto 84%;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 620px;
-    width: 42%;
+        height: 540px;
+
+    width: calc(50% - 15px);
     justify-content: center;
     align-items: end;
     display: -webkit-box;
@@ -3798,21 +3856,22 @@ hr {
 @media (max-width: 575px) {
     .about-area3 .about-img3 {
         width: 100%;
-        height: 500px
+        height: 340px
     }
 }
+
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .about-area3 .about-img3 {
         width: 100%;
-        height: 550px
+        height: 610px
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .about-area3 .about-img3 {
         width: 100%;
-        height: 600px
+        height: 665px
     }
 }
 
@@ -3892,12 +3951,15 @@ hr {
 }
 
 .about-area3 .about-details3 {
-    height: 620px;
-    width: 58%;
-    padding: 85px 29px;
+        height: 540px;
+
+    width: calc(50% - 15px);
+        padding: 40px 29px;
+
     display: flex;
     align-items: center;
-    padding-left: 20%
+    justify-content: center;
+    padding-left: 5%
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
@@ -3912,19 +3974,15 @@ hr {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .about-area3 .about-details3 {
-        width: 100%;
-        padding: 50px 30px;
-        height: 591px
-    }
-}
+/* Replaced about-area3 tablet styles */
+
+
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .about-area3 .about-details3 {
         width: 100%;
         padding: 50px 30px;
-        height: 530px
+        height: auto
     }
 }
 
@@ -3932,10 +3990,11 @@ hr {
     .about-area3 .about-details3 {
         width: 100%;
         padding: 50px 15px;
-        height: 548px;
+        height: auto;
         padding-top: 0
     }
 }
+
 
 .about-area3 .about-details3 .right-caption2 {
     width: 90%
@@ -5576,8 +5635,8 @@ hr {
 }
 
 .wantToWork-area .wantToWork-caption {
-    margin-left: -50px;
-    margin-top: 14px;
+    margin-left: -150px;
+    margin-top: 20px;
 }
 
 .wantToWork-area .wantToWork-caption h2 {
@@ -5585,6 +5644,39 @@ hr {
     font-weight: 700;
     line-height: 1.5;
     margin-bottom: 20px
+}
+
+@media only screen and (max-width: 1199px) {
+    .wantToWork-area .wantToWork-caption {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .wantToWork-area .col-xl-4 .row {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .wantToWork-area .row.align-items-center.justify-content-between {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .wantToWork-area .col-xl-7,
+    .wantToWork-area .col-xl-4 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .wantToWork-area .col-xl-4 .row {
+        justify-content: flex-start;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5605,6 +5697,44 @@ hr {
         font-size: 25px;
         margin-bottom: 20px
     }
+
+    .wantToWork-area .row.align-items-center.justify-content-between {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+    }
+
+    .wantToWork-area .col-xl-4 .row {
+        justify-content: center;
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+    }
+
+    .wantToWork-area .col-xl-4 .row .cta-or-text,
+    .wantToWork-area .col-xl-4 .row .linkedin-links,
+    .wantToWork-area .col-xl-4 .row .col-auto {
+        width: 100%;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .wantToWork-area .col-xl-4 .row .linkedin-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .wantToWork-area .linkedin-link,
+    .wantToWork-area .btn.w-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .wantToWork-area .cta-or-text {
+        white-space: normal;
+    }
 }
 
 .wantToWork-area .wantToWork-caption p {
@@ -5622,8 +5752,33 @@ hr {
 @media (max-width: 575px) {
     .wantToWork-area .wantToWork-btn {
         float: left;
-        margin-top: 30px
+        margin-top: 0;
     }
+}
+
+.wantToWork-area .wantToWork-btn {
+    display: inline-flex !important;
+    margin-top: 0;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: #967855 !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.wantToWork-area .btn.w-btn {
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: #967855 !important;
+    color: #fff !important;
+    border: none !important;
+    display: inline-flex !important;
+}
+
+.wantToWork-area {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5668,12 +5823,23 @@ hr {
 .wantToWork-area .linkedin-link {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
     white-space: nowrap;
     line-height: 1.15;
-    padding: 0 !important;
+    padding: 12px 20px !important;
     margin: 0 !important;
     min-width: 0;
+    border-radius: 999px;
+    background-color: #967855;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.wantToWork-area .linkedin-link:hover {
+    background-color: #876d4d;
+    color: #fff;
 }
 
 .wantToWork-area .btn.w-btn {
