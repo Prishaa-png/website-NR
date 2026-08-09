@@ -112,13 +112,6 @@
 /* ---------- Testimonials: give each quote a defined card so it
    reads as a distinct, finished block rather than bare text ---------- */
 @media only screen and (max-width: 767px) {
-    .testimonial-area .single-testimonial {
-        background: #ffffff;
-        border-radius: 16px;
-        padding: 24px 20px !important;
-        margin-bottom: 20px;
-        box-shadow: 0 10px 25px rgba(1, 10, 68, 0.06);
-    }
     .h1-testimonial-active .single-testimonial:last-child {
         margin-bottom: 0;
     }
@@ -175,5 +168,89 @@
     .about-area3 .about-details3 {
         padding-left: 20px !important;
         padding-right: 20px !important;
+    }
+}
+
+/* ============================================================
+   NEW MOBILE REFINEMENTS
+   ============================================================ */
+
+/* 1. Enlarge Hero Image to full width on mobile */
+@media only screen and (max-width: 767px) {
+    .slider-area .single-slider .slider-cap-wrapper .hero-img {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+/* 2. Reorder About sections so text always appears before the image */
+@media only screen and (max-width: 991px) {
+    /* Override the default 'display: block' applied on mobile/tablet */
+    .about-area,
+    .about-area2,
+    .about-area3 {
+        display: flex !important;
+    }
+    
+    /* Original HTML: img -> text. Reversed for mobile: text -> img */
+    .about-area {
+        flex-direction: column-reverse;
+    }
+    
+    /* Original HTML: text -> img. Kept in natural order */
+    .about-area2 {
+        flex-direction: column;
+    }
+    
+    /* Original HTML: img -> text. Reversed for mobile: text -> img */
+    .about-area3 {
+        flex-direction: column-reverse;
+    }
+}
+
+/* 3. Reduce gap between text ("Partner..." / "Founder...") and images */
+@media only screen and (max-width: 991px) {
+    /* Overrides the default 50px bottom padding to pull the image closer */
+    .about-area .about-details,
+    .about-area2 .about-details2,
+    .about-area3 .about-details3 {
+        padding-bottom: 10px !important;
+    }
+}
+
+/* 4. Increase gap before the "What We Offer" section */
+@media only screen and (max-width: 991px) {
+    /* Adds space between the previous image and the "What We Offer" text block */
+    .about-area3 {
+        margin-top: 50px;
+    }
+    
+    /* Overrides the default 0px top padding applied to this block on small screens */
+    .about-area3 .about-details3 {
+        padding-top: 30px !important;
+    }
+}
+
+/* 5. Increase gap between "What Our Clients Say" and the testimonials */
+@media only screen and (max-width: 991px) {
+    /* Overrides the 'mb-0' (margin-bottom: 0) utility class used in the HTML */
+    .testimonial-area .section-tittle {
+        margin-bottom: 40px !important;
+    }
+}
+
+/* ============================================================
+   FURTHER MOBILE REFINEMENTS
+   ============================================================ */
+
+/* 6. Align bottom of hero image with beige background */
+@media only screen and (max-width: 767px) {
+    /* Remove bottom padding from the slider container and the image wrapper */
+    .slider-area {
+        padding-bottom: 0 !important;
+    }
+    .slider-area .single-slider .slider-cap-wrapper .hero-img {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
     }
 }
